@@ -13,11 +13,7 @@ RUN apt-get update && \
 	apt-get clean && \
 	echo -n > /var/lib/apt/extended_states
 
-# eMedic360
-RUN apt-get install -y vim 
-#
 
-#
 RUN mkdir /config /data
 RUN useradd -u 500 core
 ADD config /config
